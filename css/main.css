@@ -1086,10 +1086,19 @@ footer .ft_bottom span {
 .mo_wrap {
   display: none;
 }
+img.mo { display: none !important; }
 
 
 /* 모바일 */
 @media screen and (max-width:990px) {
+  img.pc {
+    display: none !important;
+  }
+
+  img.mo {
+    display: block !important;
+  }
+
   .centerbox {
     padding: 0 20px;
   }
@@ -1456,10 +1465,6 @@ footer .ft_bottom span {
   /* section2 */
   .section2 {
     padding: 5rem 0 0;
-  }
-
-  .section2 .centerbox {
-    padding: ;
   }
 
   .section2 .values-list {
