@@ -115,7 +115,7 @@ body {font-family: 'Pretendard-Regular';}
 
 .subFont1{font-family: "Abhaya Libre", serif;font-weight: 400;font-style: normal;}
 
-.subFont2{font-family:'Pretendard-medium';font-weight: 500;font-style: normal;}
+.subFont2 { font-family: "Pretendard-Medium"; font-weight: 500; font-style: normal; }
 
 .subFont3{
     font-family: 'Pretendard-SemiBold';
