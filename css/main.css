@@ -76,7 +76,7 @@ header .pc_nav .gnb {
 header .pc_nav .gnb li a {
   display: block;
   padding: 1.9vw 2.6vw;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #fff;
   position: relative;
   transition: color 0.3s;
@@ -1086,7 +1086,10 @@ footer .ft_bottom span {
 .mo_wrap {
   display: none;
 }
-img.mo { display: none !important; }
+
+img.mo {
+  display: none !important;
+}
 
 
 /* 모바일 */
@@ -1120,12 +1123,16 @@ img.mo { display: none !important; }
   }
 
   .wrap {
-    padding-top: 0;
+    padding-top: 60px;
   }
 
   header {
     height: 60px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
   }
 
   header h1 {
@@ -1138,8 +1145,26 @@ img.mo { display: none !important; }
     z-index: 2;
   }
 
-  header .icons.pc {
-    display: none;
+  header h1 img {
+    width: 80px;
+    height: auto;
+  }
+
+  header .icons {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 0;
+    margin-right: 0;
+    gap: 1rem;
+  }
+
+  header .icons a img {
+    width: 18px;
+    height: 18px;
+    padding: 3px;
   }
 
   /* 햄버거 */
@@ -1151,6 +1176,7 @@ img.mo { display: none !important; }
     left: 20px;
     top: 10px;
     z-index: 3;
+    border: none; 
   }
 
   .hamburger span {
